@@ -7,5 +7,5 @@
 <br />
 Vi är webbyrån Swedishweb och vi erbjuder olika typer av moderna webb-lösningar till större och mindre företag. 
 
-Uppdragen varierar i storlek, det kan vara en helhetslösning där vi går från skiss till färdig hemsida med kund
-eller nyutveckling av en existerande webbsida.
+Uppdragen varierar i storlek, det kan vara en helhetslösning där vi går från skiss till färdig hemsida 
+med kund eller nyutveckling av en existerande webbsida.
