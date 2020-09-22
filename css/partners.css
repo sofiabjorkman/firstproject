@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/liquid-bg-044bd9.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-color: #f2f2f2;
+}
+
+.partner-header {
+    width: 1000px;
+    height: 300px;
+    background: white;
+    margin: auto;
+    position: relative;
+    top: 200px;
+    border-top: #f2ac29 solid 4px;
+    border-radius: 4px;
+    box-shadow: 10px 0px 69px -32px rgba(0,0,0,0.25);
+}
+
+.partner-heading {
+
+}
+
+.partner-subheading {
+
+}
+
+.partner-paragraph {
+    
+}
