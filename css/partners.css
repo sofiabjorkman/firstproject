@@ -78,3 +78,13 @@ body {
     position: relative;
     top: 20px;
 }
+
+@media only screen and (max-width:800px) {
+    .partners-grid {
+        grid-template-columns: 400px;
+    }
+
+    .partners-header {
+        width: 400px;
+    }
+}
