@@ -1,32 +1,74 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../img/liquid-bg-044bd9.png);
-    background-repeat: no-repeat;
-    background-size: 70%;
     background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+#liquid-blob-top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#liquid-blob-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .partner-header {
     width: 1000px;
-    height: 300px;
+    height: 180px;
     background: white;
     margin: auto;
     position: relative;
-    top: 200px;
-    border-top: #f2ac29 solid 4px;
+    top: 150px;
     border-radius: 4px;
-    box-shadow: 10px 0px 69px -32px rgba(0,0,0,0.25);
+    box-shadow: 10px 0px 60px -32px rgba(0,0,0,0.25);
+    z-index: 1;
 }
 
 .partner-heading {
-
+    color: black;
+    font-family: Poppins;
+    font-size: 30pt;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    z-index: 1;
 }
 
 .partner-subheading {
-
+    color: black;
+    font-family: Roboto;
+    font-size: 16pt;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    z-index: 1;
 }
 
 .partner-paragraph {
     
+}
+
+.partner-wrapper {
+    margin: auto;
+    width: 400px;
+}
+
+.partner-container {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 10px 0px 60px -32px rgba(0,0,0,0.25);
 }
