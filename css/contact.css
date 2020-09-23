@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fcfcfc;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .contact {
+    max-width: 800px;
+    text-align: center;
+}
+
+.container .contact h2 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .contact p {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox label {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactform .inputbox input:focus label,
+.contactform .inputbox input:valid label,
+.contactform .inputbox textarea:focus label,
+.contactform .inputbox textarea:valid label {
+ color: rgb(92, 90, 90);
+ font-size: 12px;
+ transform: translateY(-20px);
+}
+
+.contactform .inputbox [typ="submit"] {
+width: 100px;
+background: rgb(92, 90, 90);
+color: black;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
