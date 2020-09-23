@@ -11,6 +11,3 @@ Uppdragen varierar i storlek, det kan vara en helhetslösning där vi går från
 med kund eller nyutveckling av en existerande webbsida.
 
 <br>
-
-### Boilerplate
-<img src="https://cdn.discordapp.com/attachments/757541435296972823/757990328283168878/grafisk-profil.png">
