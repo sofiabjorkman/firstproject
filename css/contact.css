@@ -3,45 +3,79 @@
     padding: 0;
 }
 
-.container {
+.content {
     background-color: #fcfcfc;
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.container .contact {
+.content .contact {
     max-width: 800px;
     text-align: center;
 }
 
-.container .contact h2 {
-    font-size: 36px;
+.content .contact h2 {
+    font-size: 40px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
 
-.container .contact p {
+.content .contact p {
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
 
-.content {
-    width: 100%;
+/* Contact Information */
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.contactinfo .box {
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.icons {
+    min-width: 60px;
+    height: 60px;
+    background: #2B76D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+/* Contact Form */
+
+.contactform {
+    width: 90%;
+    padding-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.contactform {
-    width: 40%;
-    padding: 40px;
-    
 }
 
 .contactform .inputbox {
@@ -52,6 +86,7 @@
 
 .contactform .inputbox input,
 .contactform .inputbox textarea {
+    background-color: #fcfcfc;
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -74,21 +109,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.contactform .inputbox input:focus label,
-.contactform .inputbox input:valid label,
-.contactform .inputbox textarea:focus label,
-.contactform .inputbox textarea:valid label {
- color: rgb(92, 90, 90);
+.contactform .inputbox input:focus ~ label,
+.contactform .inputbox input:valid ~ label,
+.contactform .inputbox textarea:focus ~ label,
+.contactform .inputbox textarea:valid ~ label {
+ color:  #2B76D9;
  font-size: 12px;
  transform: translateY(-20px);
 }
 
 .contactform .inputbox [typ="submit"] {
 width: 100px;
-background: rgb(92, 90, 90);
-color: black;
+background: #2B76D9;
+color: #fcfcfc;
 border: none;
 cursor: pointer;
-padding: 10px;
+padding: 8px;
 font-size: 18px;
+text-align: center;
+border-radius: 5px;
 }
