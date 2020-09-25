@@ -38,7 +38,7 @@ a {
 }
 
 .partners-header {
-    width: 810px;
+    width: 825px;
     height: 150px;
     margin: auto;
     background: #2b65d9;
@@ -53,8 +53,8 @@ a {
     display: grid;
     grid-template-columns: 400px 400px;
     grid-auto-rows: minmax(400px, auto);
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 25px;
+    row-gap: 25px;
     justify-content: center;    
     margin-bottom: 100px;
 }
