@@ -4,6 +4,10 @@ body {
     background-color: #fcfcfc;
 }
 
+a {
+    text-decoration: none;
+}
+
 #partners-wrapper {
     position: relative;
 }
@@ -13,7 +17,6 @@ body {
     bottom: 0;
     z-index: -1;
     pointer-events: none;
-
     position: fixed;
 }
 
@@ -71,6 +74,14 @@ body {
     transition: 0.2s;
 }
 
+.partners-card span {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    margin-right: 3px;
+    pointer-events: none;
+}
+
 .partners-card-heading {
     color: black;
     font-family: Poppins;
@@ -79,7 +90,9 @@ body {
     text-align: center;
     position: relative;
     top: 28px;
+    margin: 0 30px;
     z-index: 1;
+    
 }
 
 .partners-card-subheading {
@@ -90,13 +103,37 @@ body {
     text-align: center;
     position: relative;
     top: 50px;
-    margin: 0 40px;
+    margin: 0 20px;
     z-index: 1;
+    transition: 0.2s;
 }
 
-/* .partners-card:hover {
-    margin: 5px 5px 5px 5px;
-} */
+.partners-card-button {
+    position: relative;
+    box-shadow: 0px 0px 40px -20px rgba(0,0,0,0.68);
+    top: 75px;
+    border-radius: 2px;
+    margin: auto;
+    width: 260px;
+    height: 60px;
+    background: #f2ac29;
+    color: white;
+    display: grid;
+    font-family: Poppins;
+    font-size: 16pt;
+    font-weight: 500;
+    place-items: center;
+    transition: 0.2s;
+}
+
+.partners-card-button:hover {
+    background: #2b65d9;
+    transform: scale(1.03);
+}
+
+ /* .partners-card:hover {
+    margin: 3px 3px 3px 3px;
+}  */
 
 .partner-logo {
     text-align: center;
@@ -104,7 +141,7 @@ body {
     top: 20px;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:850px) {
     .partners-grid {
         grid-template-columns: 400px;
     }
@@ -113,3 +150,4 @@ body {
         width: 400px;
     }
 }
+
