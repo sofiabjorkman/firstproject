@@ -1,19 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
+}
+
+#partners-wrapper {
+    position: relative;
 }
 
 #liquid-top-left {
-    position: absolute;
-    left: 0;
-    top: 0;
+    right: 0;
+    bottom: 0;
     z-index: -1;
     pointer-events: none;
+
+    position: fixed;
 }
 
 .partners-heading {
-    color: black;
     font-family: Poppins;
     font-size: 30pt;
     font-weight: 500;
@@ -24,7 +28,7 @@ body {
 }
 
 .partners-subheading {
-    color: black;
+    color: whitesmoke;
     font-family: Roboto;
     font-size: 16pt;
     font-weight: 500;
@@ -42,11 +46,11 @@ body {
     width: 810px;
     height: 150px;
     margin: auto;
-    background: white;
+    background: #2b65d9;
     margin-bottom: 10px;
-    border-radius: 2px;
-    margin-top: 160px;
+    margin-top: 80px;
     box-shadow: 0px 0px 57px -30px rgba(0,0,0,0.25);
+    color: white;
 }
 
 .partners-grid {
@@ -60,18 +64,39 @@ body {
     margin-bottom: 100px;
 }
 
-
-
 .partners-card {
-    border-top: 4px solid #bfbfbf;
+    border-top: 4px solid #eee;
     background: white;
     box-shadow: 0px 0px 57px -30px rgba(0,0,0,0.25);
     transition: 0.2s;
 }
 
-.partners-card:hover {
-    margin: 5px 5px 5px 5px;
+.partners-card-heading {
+    color: black;
+    font-family: Poppins;
+    font-size: 18pt;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 28px;
+    z-index: 1;
 }
+
+.partners-card-subheading {
+    color: black;
+    font-family: Roboto;
+    font-size: 16pt;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: 0 40px;
+    z-index: 1;
+}
+
+/* .partners-card:hover {
+    margin: 5px 5px 5px 5px;
+} */
 
 .partner-logo {
     text-align: center;
