@@ -24,6 +24,19 @@
                 <li><a class="nav-link" href="contact.html">contact</a></li>
             </ul>
         </nav>
+
+        <div class="mobile-nav-button">
+            <i class="button-icon"></i>
+        </div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="index.html">home</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="about.html">about</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" id="mobile-active" href="cases.html">cases</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="partners.html">partners</a></li>
+                <li class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">contact</a></li>
+            </ul>
+        </div>
     </div>
     <section class="case-intro">
         <h1>Cases</h1>
@@ -71,8 +84,18 @@
         </div>
     </section>
 
-    <!-- <footer>
+    <footer>
         <p>Copyright SwedishWeb 2019-2020</p>
-    </footer> -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".mobile-nav-button").on("click", function () {
+                $(this).toggleClass("nav-toggle");
+                $(".mobile-nav").toggleClass("nav-extender");
+            });
+        });
+    </script>
 </body>
 </html>
