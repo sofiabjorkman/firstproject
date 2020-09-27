@@ -6,7 +6,7 @@
 .content {
     position: relative;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,15 +24,17 @@
 }
 
 .content .contact p {
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
 
 .contact {
     background: #2B76D9;
     border-radius: 10px;
-    padding: 14px;
+    padding: 20px;
     align-items: center;
+    width: 900px;
 }
 
 /* Contact Information */
@@ -42,6 +44,7 @@
     align-items: center;
     margin: 40px;
     justify-content: center;
+    font-size: 22px;
 
 }
 
@@ -76,6 +79,11 @@
 
 /* Contact Form */
 
+form {
+    width: 400px;
+    padding-left: 60px;
+}
+
 .contactform {
     width: 90%;
     padding-left: 20px;
@@ -95,11 +103,11 @@
 .contactform .inputbox textarea {
     background-color: #fcfcfc;
     width: 100%;
-    padding: 5px 0;
+    padding: 24px 0px 5px 0px;
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 3px solid #333;
     outline: none;
     resize: none;
 }
@@ -129,8 +137,6 @@
 width: 100px;
 background: #2B76D9;
 color: #fcfcfc;
-border: none;
-cursor: pointer;
 padding: 8px;
 font-size: 18px;
 text-align: center;
@@ -170,7 +176,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 50px;
+    border-bottom: 4px solid #eee;
 }
 
 .navbar-links {
@@ -181,7 +188,7 @@ nav {
 
 .navbar-links li {
     list-style: none;
-    padding: 2rem 2rem;
+    padding: 10px 25px;
 }
 
 ul li a {
@@ -189,10 +196,39 @@ ul li a {
     color: #333;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    padding: 10px 0;
+    position: relative;
+}
+
+ul li .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: #2b76d9;
+    transition: opacity 0.1s, height 0.1s;
+}
+
+ul li .nav-link:hover::after {
+    height: 4px;
+    opacity: 1;
+}
+
+#active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2b76d9;
 }
 
 nav .logo-container {
-    width: 10%;
+    width: 100px;
 }
 
 nav .logo-container img{
@@ -207,13 +243,38 @@ footer {
     height: 58px;
     bottom: 0;
     text-align: center;
+} 
+
+@media screen and (max-width: 958px) {
+    .contact {
+        width: 700px;
+    }
+
+   .flex {
+       font-size: 20px;
+   }
+
+   form {
+    width: 360px;
+    padding-left: 60px;
+   }
 }
 
 @media screen and (max-width: 768px){
     .flex {
         flex-direction: column;
+        font-size: 24px;
     }
     .content .contactinfo {
         margin-bottom: 20px;
     }
+
+    form {
+        padding-left: 10px;
+    }
+
+    .contact {
+        width: 500px;
+    }
+
 }
