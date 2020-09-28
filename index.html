@@ -8,24 +8,31 @@
     <!--Links-->
     <link rel="icon" href="images/logga.png" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/baeeb3b130.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
 
 </head>
 <body>
-    <div class="container">
-        <nav>
+    <div class="nav-container">
+        <nav class="main-nav">
             <div class="logo-container">
                 <img src="images/logga.png" alt="picture of our loggo">
             </div>
 
             <ul class="navbar-links">
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="cases.html">cases</a></li>
-                <li><a href="partners.html">partners</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a id="active" href="index.html">home</a></li>
+                <li><a class="nav-link" href="about.html">about</a></li>
+                <li><a class="nav-link" href="cases.html">cases</a></li>
+                <li><a class="nav-link" href="partners.html">partners</a></li>
+                <li><a class="nav-link" href="contact.html">contact</a></li>
             </ul>
+
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
         </nav>
     </div>
 
@@ -37,10 +44,20 @@
             </div>
 
             <div id="hero-img">
-                <img src="images/Hero-section-img.png" alt="">
+                <div class="ipad-container">
+                    <img src="images/header-imgv2.png" alt="">
+                </div>
             </div>
         </div>
     </main>
+
+    <section id="partners">
+        <div class="container partners-container">
+            <img src="images/partners-images/klarna.png" alt="klarna logo">
+            <img src="images/partners-images/komplett.png" alt="komplett logo">
+            <img src="images/partners-images/wp-engine.png" alt="wp engine logo">
+        </div>
+    </section>
 
     <section id="about">
         <div class="container">
@@ -51,8 +68,9 @@
             <div class="txt-content">
                 <h2>About section teaser</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, nesciunt sequi facere eius dolorum nihil, doloremque culpa nam tempore totam architecto? Natus in facilis vitae nesciunt doloribus molestias nisi laboriosam.</p>
-                <a class="btn" href="about.html">Read More</a>
+                <a class="btn yellow-border" href="about.html">Read More &nbsp; <span class="circle yellow-circle"><i class="fas fa-arrow-right"></i></span></a>
             </div>
+
         </div>
     </section>
 
@@ -61,50 +79,42 @@
             <h2>Our latest projects</h2>
             <div class="project-container">
                 <div class="project-box">
-                    <img src="" alt="">
-                </div>
-
-                <div class="project-box small">
-                    <img src="" alt="">
-                </div>
-
-                <div class="project-box small">
-                    <img src="" alt="">
+                    <img src="images/case-images/colina.png" alt="">
                 </div>
 
                 <div class="project-box">
-                    <img src="" alt="">
+                    <img src="images/case-images/first.png" alt="">
                 </div>
 
-                <div class="project-box">
-                    <img src="" alt="">
+                <div class="project-box small">
+                    <img src="images/case-images/pergola.png" class="small-img" alt="">
                 </div>
             </div>
 
-            <a class="btn" href="cases.html">See More Projects</a>
+            <a class="btn blue-border-btn" href="cases.html">See More Projects &nbsp; <span class="circle blue-circle"><i class="fas fa-arrow-right"></i></span></a>
         </div>
     </section>
 
     <section class="contact">
         <div class="container">
             <div class="contact-txt">
-                <h2>Customers review</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga?</p>
-                <a class="btn" href="cases.html">Contact Us</a>
+                <h2 class="con-txt-size">Customers review</h2>
+                <p class="con-p-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga?</p>
+                <a class="btn blue-btn" href="cases.html">Contact Us &nbsp; <span class="circle"><i class="fas fa-arrow-right"></i></span></a>
             </div>
 
             <div class="review-con">
                 <div class="review-box">
-                    <h2>"</h2>
+                    <i class="fas fa-quote-right" style="color: #333; margin-bottom: 25px;"></i>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi nobis tempore officiis, quae odio ab commodi doloribus necessitatibus optio obcaecati sint, est consectetur quasi itaque eum facere beatae. Tenetur!</p>
-                    <h3>Name Surname</h3>
+                    <h5>Name Surname</h5>
                     <p class="place">Place</p>
                 </div>
                 
                 <div class="review-box">
-                    <h2>"</h2>
+                    <i class="fas fa-quote-right" style="color: #333; margin-bottom: 25px;"></i>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi nobis tempore officiis, quae odio ab commodi doloribus necessitatibus optio obcaecati sint, est consectetur quasi itaque eum facere beatae. Tenetur!</p>
-                    <h3>Name Surname</h3>
+                    <h5>Name Surname</h5>
                     <p class="place">Place</p>
                 </div>
             </div>
@@ -114,5 +124,32 @@
     <footer>
         <p>Copyright SwedishWeb 2019-2020</p>
     </footer>
+
+    <script>
+        const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navbar-links');
+        const navLinks = document.querySelectorAll('.navbar-links li');
+
+            burger.addEventListener('click', () => {
+                //toggle nav
+                nav.classList.toggle('nav-active');
+
+                //animate links
+                navLinks.forEach((link, index) => {
+                if(link.style.animation) {
+                    link.style.animation = '';
+                    } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+
+                //burger animation
+                burger.classList.toggle('toggle');
+            });
+        }
+
+        navSlide();
+    </script>
 </body>
 </html>

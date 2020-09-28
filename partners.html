@@ -3,45 +3,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>SwedishWeb | Partners</title>
-        <link rel="stylesheet" href="css/partners.css">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/partners.css">
+        <link rel="stylesheet" href="css/global.css">
         <link rel="icon" href="images/logga.png" type="image/png" sizes="16x16">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> <!--Poppins-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!--Roboto-->
     </head>
     <body>  
-        <img id="liquid-top-left" src="images/partners-images/liquid-bg-044bd9.png" height="45%">
-        <div class="partners-header">
-            <div class="partners-heading">
-                Partners
-            </div>
-            <div class="partners-subheading">Simple payment solutions, professional e-mail management <br> and advertising for your business.</div>
-        </div>
-        <div class="partners-grid"> 
-            
-            <div class="partners-card"> <!--Klarna-->
-                <div class="partner-logo"><img src="images/partners-images/klarna.png" width="250px"></div>
-                <div class="partner-heading"></div>
-                <div class="partner-subheading"></div>
-            </div>
-            
-            <div class="partners-card"> <!--Webhallen-->
-                <div class="partner-logo"><img src="images/partners-images/komplett.png" width="250px"></div>
-                <div class="partner-heading"></div>
-                <div class="partner-subheading"></div>
-            </div>
-            
-            <div class="partners-card"> <!--Google AdSense-->
-                <div class="partner-logo"><img src="images/partners-images/adsense.png" width="250px"></div>
-                <div class="partner-heading"></div>
-                <div class="partner-subheading"></div>
-            </div>     
-            <div class="partners-card"> <!--WP Engine-->
-                <div class="partner-logo"><img src="images/partners-images/wp-engine.png" width="250px"></div>
-                <div class="partner-heading"></div>
-                <div class="partner-subheading"></div>         
-            </div>
         
+        <div class="nav-container">
+            <nav>
+                <div class="logo-container">
+                    <img src="images/logga.png" alt="picture of our loggo">
+                </div>
+    
+                <ul class="navbar-links">
+                    <li><a class="nav-link" href="index.html">home</a></li>
+                    <li><a class="nav-link" href="about.html">about</a></li>
+                    <li><a class="nav-link" href="cases.html">cases</a></li>
+                    <li><a id="active"  href="partners.html">partners</a></li>
+                    <li><a class="nav-link" href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="partners-wrapper">
+            <div class="partners-header">
+                <div class="partners-heading">
+                    Partners
+                </div>
+                <div class="partners-subheading">Simple payment solutions, professional e-mail management <br> and advertising for your business.</div>
+            </div>
+            <div class="partners-grid"> 
+                
+                <div class="partners-card"> <!--Klarna-->
+                    <div class="partner-logo"><img src="images/partners-images/klarna.png" width="250px"></div>
+                    <div class="partners-card-heading">Smoooth payments.</div>
+                    <div class="partners-card-subheading">Through our partner Klarna Bank AB, we help you connect the largest payment solutions right to your eCommerce website - in a single, integrated, and complete solution.</div>
+                    <a href=""><div class="partners-card-button">See pricing</div></a>
+                </div>
+                
+                <div class="partners-card"> <!--Webhallen-->
+                    <div class="partner-logo"><img src="images/partners-images/komplett.png" width="250px"></div>
+                    <div class="partners-card-heading">Professional e-mail suite.</div>
+                    <div class="partners-card-subheading">Through our partners Komplett AB, we offer you a complete solution for your business with professional e-mail and document management, via <span><img src="images/partners-images/Office_365_logo.png" height="16px"></span>.</div>
+                    <a href=""><div class="partners-card-button">See pricing</div></a>
+                </div>
+                
+                <div class="partners-card"> <!--Google AdSense-->
+                    <div class="partner-logo"><img src="images/partners-images/adsense.png" width="250px"></div>
+                    <div class="partners-card-heading">Google certified advertising.</div>
+                    <div class="partners-card-subheading">With a Google Ads certification, we at SwedishWeb show that we have professional accreditation from Google in online advertising.</div>
+                    <a href=""><div class="partners-card-button">See pricing</div></a>
+                </div>     
+                <div class="partners-card"> <!--WP Engine-->
+                    <div class="partner-logo"><img src="images/partners-images/wp-engine.png" width="250px"></div>
+                    <div class="partners-card-heading">We are WP Engine member partners.</div>
+                    <div class="partners-card-subheading">In addition to designing and developing websites in WordPress, we also provide web hosting, and personal support for your website. </div>         
+                    <a href=""><div class="partners-card-button">See pricing</div></a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
