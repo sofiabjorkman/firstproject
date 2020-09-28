@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="nav-container">
-        <nav>
+        <nav class="main-nav">
             <div class="logo-container">
                 <img src="images/logga.png" alt="picture of our loggo">
             </div>
@@ -27,6 +27,12 @@
                 <li><a class="nav-link" href="partners.html">partners</a></li>
                 <li><a class="nav-link" href="contact.html">contact</a></li>
             </ul>
+
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
         </nav>
     </div>
 
@@ -118,5 +124,32 @@
     <footer>
         <p>Copyright SwedishWeb 2019-2020</p>
     </footer>
+
+    <script>
+        const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navbar-links');
+        const navLinks = document.querySelectorAll('.navbar-links li');
+
+            burger.addEventListener('click', () => {
+                //toggle nav
+                nav.classList.toggle('nav-active');
+
+                //animate links
+                navLinks.forEach((link, index) => {
+                if(link.style.animation) {
+                    link.style.animation = '';
+                    } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+
+                //burger animation
+                burger.classList.toggle('toggle');
+            });
+        }
+
+        navSlide();
+    </script>
 </body>
 </html>
