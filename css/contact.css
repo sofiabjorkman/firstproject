@@ -21,12 +21,14 @@
     font-size: 40px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    color: #fcfcfc;
 }
 
 .content .contact p {
     font-size: 20px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    color: #fcfcfc;
 }
 
 .contact {
@@ -45,7 +47,6 @@
     margin: 40px;
     justify-content: center;
     font-size: 22px;
-
 }
 
 .contactinfo .box {
@@ -119,7 +120,7 @@ form {
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.3s;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -133,7 +134,7 @@ form {
  transform: translateY(-20px);
 }
 
-.contactform .inputbox [typ="submit"] {
+.contactform .inputbox [type="submit"] {
 width: 100px;
 background: #2B76D9;
 color: #fcfcfc;
@@ -141,6 +142,7 @@ padding: 8px;
 font-size: 18px;
 text-align: center;
 border-radius: 5px;
+cursor: pointer;
 }
 
 /* Navbar/Header/Footer */
@@ -243,11 +245,27 @@ footer {
     height: 58px;
     bottom: 0;
     text-align: center;
+    padding-top: 30px;
 } 
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: #2b76d9;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+}
+
+.mobile {
+    display: none;
+}
 
 @media screen and (max-width: 958px) {
     .contact {
-        width: 700px;
+        width: 680px;
     }
 
    .flex {
@@ -257,6 +275,14 @@ footer {
    form {
     width: 360px;
     padding-left: 60px;
+   }
+
+   .navbar-links li {
+    padding: 10px 16px;
+}
+
+nav {
+    padding-right: 20px;
    }
 }
 
@@ -277,4 +303,61 @@ footer {
         width: 500px;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-links {
+        display:none;
+    }
+
+    .mobile {
+        position: absolute;
+        right: 0;
+        height: 250px;
+        top: 0;
+        background-color: #2b76d9;
+        width: 0;
+        margin-top: 100px;
+        display: block;
+        z-index: 999;
+        border-radius: 10px;
+    }
+
+    #active-mobile {
+        text-decoration: underline #f2ac29;
+        
+    }
+
+    .mobile.mobile-nav-toggle {
+        width: 250px;
+    }
+
+    li.mobile-items {
+        margin: 20px 0;
+
+    }
+
+    .links-mobile {
+        list-style-type: none;
+        padding: 0 25px;
+    }
+
+    .link-mobile {
+        color: #fcfcfc
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: 36px;
+    }
 }
+
+@media screen and (max-width: 570px) {
+    .contact {
+        width: 300px;
+    } 
+}
+
