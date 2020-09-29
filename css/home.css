@@ -36,6 +36,10 @@ main .container {
     font-size: 50px;
 }
 
+.hero-text p {
+    font-size: 32px;
+}
+
 .image-container {
     width:15%;
     margin: auto;
@@ -46,7 +50,7 @@ main .container {
 }
 
 .txt-content {
-    width: 50%;
+    width: 30%;
     margin: auto;
     text-align: center;
 }
@@ -128,27 +132,26 @@ main .container {
     margin: 5px;
     flex-basis: 1;
     flex-grow: 1;
-    background: #2b76d9;
     overflow-y: hidden;
 }
 
 .project-container .project-box img {
     width: 100%;
+    height: 100%;
 }
 
 .project-container .small {
-    width: 40%;
+    width: 50%;
     height: 300px;
     margin: 5px;
     flex-basis: 1;
     flex-grow: 0;
-    background: #2b76d9;
     overflow-y: hidden;
 }
 
 .contact {
     position: relative;
-    margin-top: 500px;
+    margin-top: 550px;
 }
 
 .contact .container {
@@ -263,9 +266,7 @@ main .container:after {
     transition: all 0.3s ease;
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
+
 
 @keyframes navLinkFade {
     from {
@@ -303,9 +304,9 @@ main .container:after {
      .navbar-links {
         position: absolute;
         right: 0px;
-        height: 37.5vh;
-        top: 8vh;
-        background-color: #2b76d9;
+        height: 100vh;
+        top: 10.5vh;
+        background-color: #2b65d9;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -313,18 +314,71 @@ main .container:after {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+
+    #active::after {
+        background-color: #f2ac29;
+    }
  
     .navbar-links li {
         opacity: 0;
         width:100%;
         text-align: center;
     }
+
+    .navbar-links li a {
+        color: #fcfcfc;
+    }
  
     .navbar-links li:hover {
-     background-image: linear-gradient(62deg, #E0C3FC 100%, #8EC5FC  0%);
+     background: #2b76d9;
     }
  
     .burger {
         display: block;
     }
+
+    .txt-content {
+        width: 50%;
+    }
  }
+
+ /*Media queries*/
+
+ @media screen and (max-width: 960px) {
+    .project-container .project-box {
+        width: 100%;
+        height: 300px;
+    }
+
+    .project-container .project-box img {
+        height: auto;
+    }
+
+    .contact-txt {
+        width:50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .review-box {
+        margin: auto;
+    }
+
+    .review-con {
+        position: relative;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .box2 {
+        display: none;
+    }
+ }
+
+ .navbar-active {
+    transform: translateX(0%);
+}
