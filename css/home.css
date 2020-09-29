@@ -282,7 +282,7 @@ main .container:after {
     z-index: -1;
 }
 
-/** Nav **/
+/** Nav Section**/
 
 .burger {
     display: none;
