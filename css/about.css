@@ -3,7 +3,7 @@
   padding: 30px;
   background-color: #2b65d9;
   color: #fcfcfc;
-  max-width: 960px;
+  max-width: 850px;
   margin: 30px auto 0 auto;
 }
 
@@ -28,6 +28,7 @@
     margin: 0 auto;
     display: block;
     object-fit:cover ;
+    box-shadow: 5px 10px;
 }
 
 .about-container .about-text-container {
@@ -52,7 +53,7 @@
   }
 
   .container {
-    padding: 0 16px;
+    padding: 2x 16px;
   }
   
   .container::after, .row::after {
@@ -64,3 +65,17 @@
   .title {
     color: grey;
   }
+
+  @media screen and (max-width: 760px) {
+    .about-container, .about-container.reverse {
+        flex-direction: column;
+    }
+
+    .about-container .about-image-container {
+        width: 80%;
+    }
+
+    .about-container .about-text-container {
+        width: 100%;
+    }
+}
