@@ -7,7 +7,12 @@
   margin: 30px auto 0 auto;
 }
 
-
+h1,h2{
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  font-family: 'Roboto' , sans-serif;
+}
 .about-container {
     display: flex;
     justify-content: center;
@@ -52,9 +57,14 @@
     transition: 0.3s;
     border-radius: 5px;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 30px;
     padding-bottom: 15px;
+    column-gap: 2px;
   }
+  .card:hover {
+    background-color: #555;
+  }
+  
 
   .container {
     padding: 2x 16px;
@@ -69,6 +79,21 @@
   .title {
     color: grey;
   }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+  
 
   @media screen and (max-width: 760px) {
     .about-container, .about-container {
